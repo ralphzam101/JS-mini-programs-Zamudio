@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>JS-mini-program</title>
+</head>
+<body>
+  <div class="div3">
+    <form action="#" method="#">
+      <button><a href="index.html">Integer Checker</a></button>
+      <button><a href="index2.html">Odd-Even Checker</a></button>
+      <button><a href="index3.html">Voters</a></button>
+
+      <h1>Can You Vote?</h1>
+        
+      <label>Name:</label>
+      <input type="text" id="name">
+      
+      <br>
+      <label>Age: </label>
+      <input type="number" id="age">
+    
+      <br>
+      <label>Are you Naturalized Filipino</label>
+      <br>
+      <input type="radio" id="naturalizeFil" value="true" name="naturalizeFil">Yes
+      <input type="radio"  id="naturalizeFil" value="false" name="naturalizeFil">No
+  
+      <br>
+      <label>How long have you been in the Philippines?</label>
+      <br>
+      <input type="radio" id="yearFil" value="true" name="yearFil" required>More than a Year
+      <br>
+      <input type="radio"  id="yearFil" value="false" name="yearFil" required>Less than a Year
+    
+      <br>
+      <input type="button" id="checker" value="Check" onclick="checkAge()">
+      <input type="button"  value="Reset" onClick="history.go(0)"  class="reset";>
+
+
+      <h1 id="voteResult"></h1>
+    </form>
+  </div>
+  
+
+  <script src="assets/script/script.js"></script>
+</body>
+</html>
